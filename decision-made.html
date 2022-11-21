@@ -1,0 +1,47 @@
+    <!DOCTYPE html>  
+    <html>  
+      
+    <head>  
+    <title>  
+    Decision maker 
+    </title>  
+    <script> 
+    
+    function fun() { 
+    var phrases = [
+ "That sounds good",
+ "Yes, you should definitely do that",
+ "I'm not sure that's a great idea",
+ "Maybe some other time",
+ "Computer says no",
+ "Maybe, but not today",
+ "Of course, you should do it!",
+ "Forget about it",
+ "Don't even think about it",
+ "Computer says yes"
+];  
+    var a = prompt("What is on your mind?");  
+    if (a != null) {  
+    document.getElementById("para").innerHTML = phrases[Math.floor(Math.random() * 9)];  
+    }  
+    }  
+    </script>  
+    </head>  
+      
+    <body style = "text-align: center;">  
+    <h1 style = "color: red;">  
+    Decision maker 
+    </h1>  
+    <h2>  
+    When you are ready 
+    </h2>  
+      
+    <button onclick = "fun()">  
+    Click me  
+    </button>  
+    <p id = "para"></p>  
+      
+      
+    </body>  
+      
+    </html>  
